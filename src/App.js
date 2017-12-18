@@ -1,20 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Card} from "./components/Card/Card";
+import {data} from './data'
+import {Grid} from "./components/Grid/Grid";
 
 class App extends Component {
   render() {
+      const cards = this.renderCards(data);
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Grid>
+          {cards}
+      </Grid>
     );
+  }
+
+  renderCards(cardsData) {
+      const cards = [];
+
+      for (const cardId in cardsData) {
+          if (cardsData.hasOwnProperty(cardId)) {
+              const cardData = cardsData[cardId];
+              cards.push(<Card key={cardData.id} {...cardData}/>)
+          }
+      }
+
+      return cards;
   }
 }
 

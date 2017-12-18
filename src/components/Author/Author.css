@@ -1,0 +1,7 @@
+.Author {
+    text-align: right;
+}
+
+.Author > * {
+    display: inline
+}

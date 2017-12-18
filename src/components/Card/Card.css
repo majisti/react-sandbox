@@ -1,0 +1,8 @@
+.Card {
+    flex: 0 0 300px;
+    border: 2px solid lightskyblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 6px;
+}
