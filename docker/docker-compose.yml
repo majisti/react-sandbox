@@ -1,0 +1,10 @@
+version: 2
+
+services:
+  node:
+    build: ./node
+    working_dir: /home/node/app
+    ports:
+      - 3000:3000
+    volumes:
+      - ../:/home/node/app

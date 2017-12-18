@@ -1,0 +1,3 @@
+FROM node:9.3.0
+ENV HOST 0.0.0.0
+EXPOSE 3000
