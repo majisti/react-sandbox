@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './Card.css';
 import {Title} from "../Title/Title";
 import {Author} from "../Author/Author";
