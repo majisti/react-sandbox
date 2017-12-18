@@ -25,3 +25,9 @@ An idea of what a next step could look like would be:
 - Allow the user to expand the card to read the whole article
 - Use a UI framework to ease styling the app
   - Material-UI, Semantic-UI-React, office-ui-fabric-react, etc
+
+## ES6 Basics
+A little bit of documentation was created in ES6_BASICS.md,
+right in the repo. The intend of this file is to give you a 
+quick and easy place to access some basic documentation on
+ES6 since React uses it so intensely.
