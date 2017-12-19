@@ -5,7 +5,7 @@ CWD=$(dirname $(perl -MCwd -e 'print Cwd::abs_path shift' ${0}))
 . ${CWD}/.helpers/init.sh
 
 build() {
-    __docker_compose build
+    __docker_compose build --no-cache
 }
 
 status() {
