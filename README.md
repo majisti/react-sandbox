@@ -11,7 +11,7 @@ It will show a list of cards with dummy news data within them.
 git clone https://github.com/majisti/react-sandbox.git
 cd react-sandbox
 sh bin/install.sh
-sh bin/cra.sh start
+sh bin/cra.sh
 ```
 
 ## How to use this project
